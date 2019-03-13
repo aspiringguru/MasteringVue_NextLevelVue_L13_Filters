@@ -6,6 +6,10 @@ import router from './router'
 import store from './store/store'
 import 'nprogress/nprogress.css'
 import Vuelidate from 'vuelidate'
+import DateFilter from './filters/date'
+
+Vue.filter('date', DateFilter)
+//this enables a global filter can be used in every component.
 
 Vue.use(Vuelidate)
 
